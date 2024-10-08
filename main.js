@@ -1,6 +1,6 @@
-let km = prompt("Chilometri da percorrere:");
+const km = Number(prompt("Chilometri da percorrere:"));
 console.log(km);
-let età = prompt("Età del passeggero:");
+const età = Number(prompt("Età del passeggero:"));
 console.log(età);
 let cost = 0.21;
 let underAge = 18;
