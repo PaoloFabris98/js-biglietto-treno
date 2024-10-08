@@ -3,15 +3,17 @@ console.log(km);
 let età = prompt("Età del passeggero:");
 console.log(età);
 let cost = 0.21;
+let underAge = 20;
+let overAge = 40; 
 let discount;
 let price;
 
 if (età < 18) {
-    discount = ((km*cost)/100)*20;
+    discount = ((km*cost)/100)*underAge;
     price = (km*cost) - discount;
     console.log(price);
 } else if (età > 65) {
-    discount = ((km*cost)/100)*40;
+    discount = ((km*cost)/100)*overAge;
     price = (km*cost) - discount;
     console.log(price);
 } else {
